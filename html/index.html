@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scripts.js"></script>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="formulario">
+            <div class="cabecalho">
+                <h1>Calculadora</h1>
+            </div>
+            <form>
+                <div class="campo">
+                    <label>Valor 1:</label>
+                    <input type="text" id="txtValor1">
+                </div>
+                <br>
+                <div class="campo">
+                    <label>Valor 2:</label>
+                    <input type="text" id="txtValor2">
+                </div>
+                <br>
+                <div class="campo">
+                    <label>Operação:</label>
+                    <select id="operacao">
+                        <option value="+">Adição</option>
+                        <option value="-">Subtração</option>
+                        <option value="*">Multiplicação</option>
+                        <option value="/">Divisão</option>
+                    </select>
+                </div>
+                <br>
+                <div class="botao">
+                    <button type="button" onclick="calcularValores()">Calcular</button>
+                </div>
+                <br>
+                <div class="campo">
+                    <label>Resultado:</label>
+                    <span class="Resultado" id="txtResultado">-</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
